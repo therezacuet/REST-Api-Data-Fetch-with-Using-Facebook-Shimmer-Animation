@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_padding"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/placeholder_image"
+        android:layout_height="@dimen/placeholder_image"
+        android:layout_marginRight="@dimen/activity_padding"
+        android:background="@drawable/circular_shape" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/name"
+            android:layout_width="@dimen/name_width"
+            android:layout_height="@dimen/name_height"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_toRightOf="@id/thumbnail"
+            android:background="@color/placeholder_bg"
+            android:layout_marginTop="@dimen/margin_10dp"/>
+
+        <View
+            android:id="@+id/mobile"
+            android:layout_width="@dimen/mobile_view_width"
+            android:layout_height="@dimen/placeholder_text_height"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@id/thumbnail"
+            android:background="@color/placeholder_bg" />
+        <View
+            android:layout_width="@dimen/mobile_view_width"
+            android:layout_height="@dimen/placeholder_text_height"
+            android:layout_below="@id/mobile"
+            android:layout_toRightOf="@id/thumbnail"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@color/placeholder_bg" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
